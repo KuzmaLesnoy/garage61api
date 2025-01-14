@@ -3,3 +3,4 @@ src/garage61api/__pycache__/client.cpython-313.pyc
 src/garage61api/__pycache__/__init__.cpython-313.pyc
 /.idea/
 /dist/
+/.venv/

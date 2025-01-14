@@ -2,6 +2,7 @@ import json
 import requests
 from typing import Literal
 from datetime import datetime, timezone
+from importlib import resources as impresources
 
 
 class Garage61Client:
@@ -24,7 +25,9 @@ class Garage61Client:
         self._base_url = "https://garage61.net/api/v1/"
         self._token = token
         self._use_garage61_ids = False
-        self.ids = json.loads(open('../garage61api/ids.json', 'r').read())
+        ids_file = impresources.files() / 'ids.json'
+        with ids_file.open('rt') as f:
+            self.ids = json.loads(f.read())
 
 
     ####################################
