@@ -32,7 +32,7 @@ ids_file = {
     "cars": cars_to_file,
     "tracks": tracks_to_file
 }
-with open("../src/garage61api/ids.json", "w") as f:
+with open("../garage61api/ids.json", "w") as f:
     json.dump(ids_file, f, indent=2)
 
 print("Update completed!")

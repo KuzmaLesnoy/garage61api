@@ -24,7 +24,7 @@ class Garage61Client:
         self._base_url = "https://garage61.net/api/v1/"
         self._token = token
         self._use_garage61_ids = False
-        self.ids = json.loads(open('../src/garage61api/ids.json', 'r').read())
+        self.ids = json.loads(open('../garage61api/ids.json', 'r').read())
 
 
     ####################################
